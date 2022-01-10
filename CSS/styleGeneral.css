@@ -156,7 +156,11 @@ input:focus {
 }
 
 .mb10 {
-    margin-bottom: px;
+    margin-bottom: 10px;
+}
+
+.mt20 {
+    margin-top: 20px;
 }
 
 /* Gap */
