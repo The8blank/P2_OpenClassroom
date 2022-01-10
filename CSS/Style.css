@@ -79,6 +79,14 @@ nav ul li a:hover {
     color: #0065FC;
 }
 
+div#filtre > div:hover {
+    cursor: pointer;
+    flex-direction: row-reverse;
+    transition: 1s ease;
+    background-color: #DEEBFF;
+
+}
+
 
 
 
