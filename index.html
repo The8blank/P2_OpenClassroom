@@ -1,86 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/Style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <title>Booki</title>
-</head>
-<body>
-    <header>
-        <!-- Booki herbegement et activités -->
-        <nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="/CSS/Style.css">
+        <link rel="stylesheet" href="/CSS/stylePhone.css">
+        <title>Booki</title>
+    </head>
+    <body>
+        <header>
+            <!-- Booki herbegement et activités -->
+            <nav>
 
-            <div>
-                <img src="/Assets/logo/Booki.png" alt="Booki">
-            </div>
-            <ul>
-                <li><a href="#">Hébergements</a></li>
-                <li><a href="#">Activités</a></li>
-            </ul>
+                <div>
+                    <img src="/Assets/logo/Booki.png" alt="Booki">
+                </div>
+                <ul>
+                    <li><a href="#">Hébergements</a></li>
+                    <li><a href="#">Activités</a></li>
+                </ul>
 
-        </nav>
-        <!-- recherche -->
-        <div class="texte">
-            <div>
-                <h2>Trouvez votre hébergements pour des vacances de rêve</h2>
-                <p>En plein centre ville ou en pleine nature</p>
+            </nav>
+            <!-- recherche -->
+            <div class="texte">
+                <div>
+                    <h2>Trouvez votre hébergements pour des vacances de rêve</h2>
+                    <p>En plein centre ville ou en pleine nature</p>
+                </div>
+
+                <div id="recherche">
+                    <div><i class="fas fa-map-marker-alt"></i></div>
+                    <div><input type="search" placeholder="Marseille, France"></div>
+                    <div><span class="mobileNone">Rechercher</span>
+                        <span><i class="fas fa-search desktopNone"></i></span>
+                    </div>
+                </div>
             </div>
 
-            <div id="recherche">
-                <div><i class="fas fa-map-marker-alt"></i></div>
-                <div><input type="search" placeholder="Marseille, France"></div>
-                <div>Rechercher</div>
+            <!-- Filtre -->
+            <div id="filtre">
+                <p><strong>Filtres</strong></p>
+                <div>
+                    <!-- Economique -->
+                    <div>
+                    <div><i class="fas fa-money-bill-wave"></i></div>
+                    <p>Économique</p>
+                    </div>
+
+                    <!-- Familial -->
+                    <div>
+                    <div><i class="fas fa-child"></i></div>
+                    <p>Familial</p>
+                    </div>
+
+                    <!-- romantique -->
+                    <div>
+                    <div><i class="fas fa-heart"></i></div>
+                    <p>Romantique</p>
+                    </div>
+
+                    <!-- Animaux autorisé -->
+                    <div>
+                    <div><i class="fas fa-dog"></i></div>
+                    <p>Animaux autorisé</p>
+                    </div>
+                </div>
+
             </div>
+
+            <!-- Info 500 logements -->
+            <div id="info" class="wfit flex mt30">
+                <!-- info -->
+                <div>
+                    <i id="info" class="fas fa-info fs7 blue1"></i>
+                </div>
+                <p>Plus de 500 logements sont disponible dans cette ville</p>
+            </div>
+        </header>
+
+        <div class="container">
+
         </div>
+        <footer>
 
-        <!-- Filtre -->
-        <div id="filtre" >
-            <p><strong>Filtres</strong></p>
-            
-            <!-- Economique -->
-            <div>
-                <div><i class="fas fa-money-bill-wave"></i></div>
-                <p>Économique</p>
-            </div>
-
-            <!-- Familial -->
-            <div>
-                <div><i class="fas fa-child"></i></div>
-                <p>Familial</p>
-            </div>
-
-            <!-- romantique -->
-            <div>
-                <div><i class="fas fa-heart"></i></div>
-                <p>Romantique</p>
-            </div>
-
-            <!-- Animaux autorisé -->
-            <div>
-                <div><i class="fas fa-dog"></i></div>
-                <p>Animaux autorisé</p>
-            </div>
-
-        </div>
-
-        <!-- Info 500 logements -->
-        <div id="info" class="wfit flex mt30">
-            <!-- info -->
-            <div>
-                <i id="info" class="fas fa-info fs7 blue1"></i>
-            </div>
-            <p>Plus de 500 logements sont disponible dans cette ville</p> 
-        </div>
-    </header>
-
-    <div class="container">
-
-    </div>
-    <footer>
-
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>

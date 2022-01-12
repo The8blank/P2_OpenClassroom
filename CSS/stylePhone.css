@@ -1,0 +1,126 @@
+@media screen and (max-width: 768px) {
+  header {
+    margin: 0px 0px 0px 0px;
+  }
+
+  /* NAV booki hebergement activités  */
+
+  header nav {
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100px;
+    width: 100%;
+
+    margin: 20px 0 20px 0;
+  }
+
+  header nav div:nth-child(1) {
+    position: relative;
+    right: -10px;
+
+    width: fit-content;
+  }
+
+  header nav div img {
+    width: 110px;
+  }
+
+  header nav ul {
+    gap: 0;
+
+    width: 100%;
+  }
+
+  nav ul li {
+    display: block;
+
+    width: 50%;
+
+    font-size: 1rem;
+    font-weight: lighter;
+
+    border-bottom: solid 3px #f2f2f2;
+  }
+
+  nav ul li a {
+    text-align: center;
+    display: block;
+  }
+
+  nav ul li:hover {
+    border-top: none;
+    border-bottom: solid 3px #0065fc;
+
+    transition: 0.5s ease-in-out;
+  }
+
+  /* Texte recherche header */
+
+  header div.texte {
+    padding: 0px 20px 0px 20px;
+  }
+
+  /* Barre de recherche  */
+
+  #recherche {
+    width: 80vw;
+    height: 50px;
+
+    margin-top: 20px;
+  }
+
+  #recherche div:nth-child(1) {
+    min-width: 10%;
+    height: 100%;
+  }
+
+  #recherche div:nth-child(2) {
+    min-width: 75%;
+  }
+
+  input[type="search"] {
+    width: 100%;
+  }
+
+  #recherche div:nth-child(3) {
+    min-width: 15%;
+    height: 100%;
+
+    border-radius: 15px;
+  }
+
+  .mobileNone {
+    display: none;
+  }
+
+  .desktopNone {
+    display: inline;
+  }
+
+  /* Filtres */
+
+  header div#filtre {
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 0 20px 0 20px;
+  }
+
+  header div#filtre div {
+    flex-wrap: wrap;
+  }
+
+  header div#info {
+    align-items: flex-start;
+
+    padding: 0 20px 0 20px;
+    height: 50px;
+    width: 100%;
+  }
+
+  header div#info div {
+    min-width: 35px;
+    min-height: 35px;
+  }
+}
