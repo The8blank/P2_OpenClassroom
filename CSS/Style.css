@@ -22,7 +22,7 @@ a {
 
 /* HEADER */
 header {
-  margin: 0 75px 0px 75px;
+  margin: 0 50px 0px 50px;
 }
 
 /* NAV */
@@ -255,3 +255,152 @@ div#filtre > div div:hover {
   transition: 1s ease;
   background-color: #deebff;
 }
+
+/*                               Fin header                                           */
+
+/* Main Hebergement à marseille et activitées */
+
+/* Hébergement à marseille */
+
+main {
+  margin: 30px 50px 20px 50px;
+}
+
+main section:nth-child(1) {
+
+  display: flex;
+  flex-flow : row wrap;
+
+  width: 100%;
+  height: auto;
+
+  gap: 50px;
+
+}
+
+main article {
+  
+  padding: 30px 20px;
+
+  background-color: #f2f2f2;
+  border-radius: 20px;
+
+}
+
+article#hebergements {
+  flex : 3;
+
+  display: flex;
+  flex-flow: column;
+
+
+  gap: 20px;
+  
+
+  height: auto;
+
+}
+
+article#hebergements > div {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+
+  gap: 20px;
+}
+
+article#hebergements > p {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+article#hebergements > div > div {
+  display: flex;
+  flex-flow: column;
+
+  width: 30%;
+  min-width: 200px;
+
+  background-color: white;
+  border: 4px solid white;
+  border-radius: 15px;
+
+  cursor: pointer;
+  
+}
+
+article#hebergements > p:hover {
+  color: #0065fc;
+}
+
+
+article#populaires{
+  flex: 1;
+
+  height: auto;
+}
+
+/* Image hebergement à marseille */
+.imgheb1{
+  background-image: url("/Assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+  background-size: cover;
+  background-position: 50% 70%;
+
+  width: 100%;
+  height: 120px;
+
+  border-radius: 15px 15px 0 0;
+}
+.imgheb2{
+  background-image: url("/Assets/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+  background-size: cover;
+  background-position: 50% 70%;
+
+  width: 100%;
+  height: 120px;
+
+  border-radius: 15px 15px 0 0;
+}
+.imgheb3{
+  background-image: url("/Assets/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+  background-size: cover;
+  background-position: 40% 60%;
+
+  width: 100%;
+  height: 120px;
+
+  border-radius: 15px 15px 0 0;
+}
+.imgheb4{
+  background-image: url("/Assets/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+  background-size: cover;
+  background-position: 50% 70%;
+
+  width: 100%;
+  height: 120px;
+
+  border-radius: 15px 15px 0 0;
+}
+.imgheb5{
+  background-image: url("/Assets/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+  background-size: cover;
+  background-position: 50% 70%;
+
+  width: 100%;
+  height: 120px;
+
+  border-radius: 15px 15px 0 0;
+}
+.imgheb6{
+  background-image: url("/Assets/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+  background-size: cover;
+  background-position: 40% 60%;
+
+  width: 100%;
+  height: 120px;
+
+  border-radius: 15px 15px 0 0;
+}
+                            
+è

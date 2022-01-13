@@ -111,6 +111,8 @@
     flex-wrap: wrap;
   }
 
+  /* Petit texte info */
+
   header div#info {
     align-items: flex-start;
 
