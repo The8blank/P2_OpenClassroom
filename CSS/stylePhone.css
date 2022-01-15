@@ -15,6 +15,7 @@
     margin: 20px 0 20px 0;
   }
 
+  /* div logo */
   header nav div:nth-child(1) {
     position: relative;
     right: -10px;
@@ -22,16 +23,19 @@
     width: fit-content;
   }
 
+  /* logo */
   header nav div img {
     width: 110px;
   }
 
+  /*list header hebergement et activités */
   header nav ul {
     gap: 0;
 
     width: 100%;
   }
 
+  /* item header hebergement et activités */
   nav ul li {
     display: block;
 
@@ -43,6 +47,7 @@
     border-bottom: solid 3px #f2f2f2;
   }
 
+  /* texte header hebergement et activités */
   nav ul li a {
     text-align: center;
     display: block;
@@ -56,13 +61,11 @@
   }
 
   /* Texte recherche header */
-
   header div.texte {
     padding: 0px 20px 0px 20px;
   }
 
   /* Barre de recherche  */
-
   #recherche {
     width: 80vw;
     height: 50px;
@@ -70,11 +73,13 @@
     margin-top: 20px;
   }
 
+  /* position icone */
   #recherche div:nth-child(1) {
     min-width: 10%;
     height: 100%;
   }
-
+  
+  /* input */
   #recherche div:nth-child(2) {
     min-width: 75%;
   }
@@ -83,6 +88,7 @@
     width: 100%;
   }
 
+  /* boutton rechercher */
   #recherche div:nth-child(3) {
     min-width: 15%;
     height: 100%;
@@ -90,6 +96,7 @@
     border-radius: 15px;
   }
 
+  /* don't show */
   .mobileNone {
     display: none;
   }
@@ -99,7 +106,6 @@
   }
 
   /* Filtres */
-
   header div#filtre {
     flex-direction: column;
     align-items: flex-start;
@@ -112,17 +118,73 @@
   }
 
   /* Petit texte info */
-
   header div#info {
     align-items: flex-start;
-
+    
     padding: 0 20px 0 20px;
     height: 50px;
     width: 100%;
   }
 
+  /* icone info */
   header div#info div {
     min-width: 35px;
     min-height: 35px;
   }
+
+  /* ----------------------------------------------------------------------- */
+  /* Main */
+
+  /*main Les plus populaire et hebergements */
+
+  main {
+    margin: 30px 0 0 0;
+
+  }
+
+  /* section hebergement et les plus populaires */
+  main section:nth-child(1){
+    flex-direction: column-reverse;
+  }
+
+  /* hebergement et les plus populaires */
+  main article {
+    border-radius: 0;
+
+    font-size: 1rem;
+  }
+
+  /* ------------------------------------------ */
+
+  /* les plus populaires */
+
+    /* cartes populaire */
+  #galeryPopulaires > div {
+    width: 100%;
+    height: 150px;
+  }
+
+  /* ----------------------------------------- */
+
+  /* hebergement */
+
+    /* article hebergement */
+  article#hebergements {
+    
+    gap: 50px;
+
+    background-color: white;
+  }
+
+    /* ligne de 3 cartes hebergements */
+  article#hebergements > div {
+    flex-direction: column;
+  }
+    /* carte */
+  article#hebergements > div > div {
+    width: 100%;
+    height: 200px;
+  }
+
+
 }

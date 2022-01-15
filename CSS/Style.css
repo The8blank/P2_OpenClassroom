@@ -152,7 +152,7 @@ header div#filtre {
 
   font-size: 1rem;
 }
-
+/* p filtre */
 header div#filtre p {
   display: flex;
   justify-content: center;
@@ -160,21 +160,21 @@ header div#filtre p {
 
   font-weight: bold;
 }
-
+/* conteneur filtres */
 header div#filtre div {
   display: flex;
   flex-wrap: wrap;
 
   gap: 20px;
 }
-
+/* div filtre */
 header div#filtre div div {
   display: flex;
 
   border: #f2f2f2 2px solid;
   border-radius: 30px;
 }
-
+/* icone filtre */
 header div#filtre div div div {
   display: flex;
   justify-content: center;
@@ -189,7 +189,7 @@ header div#filtre div div div {
   border: 1px solid #f2f2f2;
   border-radius: 50%;
 }
-
+/* texte filtre */
 header div#filtre div div p {
   display: flex;
   justify-content: center;
@@ -203,14 +203,14 @@ header div#filtre div div p {
 
 /* info 500 logements */
 
-header div#info {
+div#info {
   display: flex;
 
   width: fit-content;
   margin-top: 30px;
 }
 
-header div#info div {
+div#info div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -222,13 +222,13 @@ header div#info div {
   border-radius: 50%;
 }
 
-header div#info div i {
+div#info div i {
   font-size: 15px;
 
   color: #0065fc;
 }
 
-header div#info p {
+div#info p {
   align-self: center;
   margin-left: 10px;
 
@@ -267,40 +267,44 @@ main {
 }
 
 main section:nth-child(1) {
-
   display: flex;
-  flex-flow : row wrap;
+  flex-flow: row wrap-reverse;
 
   width: 100%;
   height: auto;
 
   gap: 50px;
-
 }
 
+/* hebergement et plus populaire */
 main article {
-  
+  height: auto;
+
   padding: 30px 20px;
 
   background-color: #f2f2f2;
   border-radius: 20px;
 
+  font-size: 0.75rem;
 }
 
+/* couleur etoiles */
+article i {
+  color: #0065fc;
+}
+
+/* article hebergement */
 article#hebergements {
-  flex : 3;
+  flex: 3;
 
   display: flex;
   flex-flow: column;
-
+  justify-content: space-between;
 
   gap: 20px;
-  
-
-  height: auto;
-
 }
 
+/* ligne de 3 carte */
 article#hebergements > div {
   display: flex;
   justify-content: space-between;
@@ -310,6 +314,7 @@ article#hebergements > div {
   gap: 20px;
 }
 
+/* carte hebergement */
 article#hebergements > div > div {
   display: flex;
   flex-flow: column;
@@ -323,33 +328,29 @@ article#hebergements > div > div {
   border: 4px solid white;
   border-radius: 15px;
 
-  cursor: pointer;
+  box-shadow: 2px 2px 10px 8px rgb(236, 236, 236);
 
-  
+  cursor: pointer;
 }
 
+/* afficher plus */
 article#hebergements > p {
+  width: fit-content;
   font-weight: bold;
   cursor: pointer;
-}
-
-.gris {
-  color: #f2f2f2;
 }
 
 article#hebergements > p:hover {
   color: #0065fc;
 }
 
-
-article#populaires{
-  flex: 1;
-
-  height: auto;
+/* etoiles grise */
+.gris {
+  color: #f2f2f2;
 }
 
 /* Image hebergement à marseille */
-.imgheb1{
+.imgheb1 {
   background-image: url("/Assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
   background-size: cover;
   background-position: 50% 70%;
@@ -359,7 +360,7 @@ article#populaires{
 
   border-radius: 15px 15px 0 0;
 }
-.imgheb2{
+.imgheb2 {
   background-image: url("/Assets/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
   background-size: cover;
   background-position: 50% 70%;
@@ -369,7 +370,7 @@ article#populaires{
 
   border-radius: 15px 15px 0 0;
 }
-.imgheb3{
+.imgheb3 {
   background-image: url("/Assets/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
   background-size: cover;
   background-position: 40% 60%;
@@ -379,7 +380,7 @@ article#populaires{
 
   border-radius: 15px 15px 0 0;
 }
-.imgheb4{
+.imgheb4 {
   background-image: url("/Assets/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
   background-size: cover;
   background-position: 50% 70%;
@@ -389,7 +390,7 @@ article#populaires{
 
   border-radius: 15px 15px 0 0;
 }
-.imgheb5{
+.imgheb5 {
   background-image: url("/Assets/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
   background-size: cover;
   background-position: 50% 70%;
@@ -399,7 +400,7 @@ article#populaires{
 
   border-radius: 15px 15px 0 0;
 }
-.imgheb6{
+.imgheb6 {
   background-image: url("/Assets/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
   background-size: cover;
   background-position: 40% 60%;
@@ -409,5 +410,103 @@ article#populaires{
 
   border-radius: 15px 15px 0 0;
 }
-                            
-è
+
+/* Les plus populaires  */
+
+article#populaires {
+  flex: 1;
+}
+
+/* Espace entre le texte et l'icone */
+#populaires > div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* icone graph */
+#populaires > div:nth-child(1) i {
+  font-size: 1.5rem;
+  color: black;
+}
+
+/* Galerie des hebergements populaires */
+
+#galeryPopulaires {
+  display: flex;
+  flex-direction: column;
+  
+  gap: 20px;
+
+  margin-top: 20px;
+
+  height: 100%;
+}
+
+/* Carte  */
+#galeryPopulaires > div {
+  display: flex;
+
+  height: 120px;
+
+  min-width: 300px;
+  max-width: 800px;
+
+  background-color: white;
+  border: 4px solid white;
+  border-radius: 15px;
+
+  box-shadow: 2px 2px 8px 8px rgb(236, 236, 236);
+
+  cursor: pointer;
+}
+/* div texte et etoile */
+#galeryPopulaires > div > div {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+
+  padding: 10px 0 10px 10px;
+
+}
+/* div texte */
+#galeryPopulaires > div > div div:nth-child(1) {
+  display: flex;
+  flex-flow: column;
+  gap: 8px;
+}
+
+
+/* Images populaire */
+
+.imgpop1 {
+  background-image: url(/Assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+
+  width: 50%;
+  height: 100%;
+
+  border-radius: 15px 0 0 15px;
+}
+
+.imgpop2 {
+  background-image: url(/Assets/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+
+  width: 50%;
+  height: 100%;
+
+  border-radius: 15px 0 0 15px;
+}
+
+.imgpop3 {
+  background-image: url(/Assets/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+
+  width: 50%;
+  height: 100%;
+
+  border-radius: 15px 0 0 15px;
+}
