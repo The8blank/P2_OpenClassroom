@@ -9,7 +9,7 @@
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
-    />
+      />
     <link rel="stylesheet" href="/CSS/Style.css" />
     <link rel="stylesheet" href="/CSS/stylePhone.css" />
     <title>Booki</title>
@@ -22,8 +22,8 @@
           <img src="/Assets/logo/Booki.png" alt="Booki" />
         </div>
         <ul>
-          <li><a href="#">Hébergements</a></li>
-          <li><a href="#">Activités</a></li>
+          <li><a href="#hebergement">Hébergements</a></li>
+          <li><a href="#activités">Activités</a></li>
         </ul>
       </nav>
       <!-- recherche -->
@@ -33,14 +33,14 @@
           <p>En plein centre ville ou en pleine nature</p>
         </div>
 
-        <div id="recherche">
+        <form id="recherche" action="booki.fr" method="post">
           <div><i class="fas fa-map-marker-alt"></i></div>
           <div><input type="search" placeholder="Marseille, France" /></div>
           <div>
             <span class="mobileNone">Rechercher</span>
             <span><i class="fas fa-search desktopNone"></i></span>
           </div>
-        </div>
+        </form>
       </div>
 
       <!-- Filtre -->

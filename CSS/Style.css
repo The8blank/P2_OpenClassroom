@@ -659,6 +659,7 @@ footer {
 
 footer> ul {
   line-height: 3rem;
+  margin: 20px 0px;
 }
 
 footer li {
