@@ -171,7 +171,7 @@
     /* article hebergement */
   article#hebergements {
     
-    gap: 50px;
+    gap: 20px;
 
     background-color: white;
   }
@@ -180,11 +180,58 @@
   article#hebergements > div {
     flex-direction: column;
   }
+
     /* carte */
   article#hebergements > div > div {
     width: 100%;
     height: 200px;
   }
 
+  /* afficher plus */
+  article#hebergements > p {
+    margin-top: 20px;
+    font-size: 1.25rem;
+  }
+
+/* -------------------------------------------------------- */
+/* Activités à Marseille  */
+
+  /* Article activités */
+  article#activités {
+    padding: 0px 20px;
+  }
+  /* Titre */
+  article#activités h2 {
+    font-size: 1.5rem;
+  }
+  /* galerie photo  */
+  #galeryActivités {
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 30px 0px;
+  }
+  /* div avant carte */
+  #galeryActivités > div {
+    gap: 20px;
+  }
+  /* Carte */
+  #galeryActivités > div>  div {
+    min-height: 200px;
+  }
+
+  .flex1 {
+    flex: 0;
+  }
+  .flex2{
+    flex: 0;
+  }
+  .imgactivités2 {
+    height: 90%;
+
+  }
+  .imgactivités3 {
+    height: 90%
+  }
 
 }
