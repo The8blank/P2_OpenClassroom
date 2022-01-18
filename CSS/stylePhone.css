@@ -149,7 +149,7 @@
   }
 
   /* hebergement et les plus populaires */
-  main article {
+  main section {
     border-radius: 0;
 
     font-size: 1rem;
@@ -170,7 +170,7 @@
   /* hebergement */
 
     /* article hebergement */
-  article#hebergements {
+  #hebergements {
     
     gap: 20px;
 
@@ -178,18 +178,18 @@
   }
 
     /* ligne de 3 cartes hebergements */
-  article#hebergements > div {
+  #hebergements > div {
     flex-direction: column;
   }
 
     /* carte */
-  article#hebergements > div > div {
+  #hebergements > div > div {
     width: 100%;
     height: 200px;
   }
 
   /* afficher plus */
-  article#hebergements > p {
+  #hebergements > p {
     margin-top: 20px;
     font-size: 1.25rem;
   }
@@ -198,12 +198,12 @@
 /* Activités à Marseille  */
 
   /* Article activités */
-  article#activités {
+  #activités {
     padding: 0px 20px;
     height: fit-content;
   }
   /* Titre */
-  article#activités h2 {
+  #activités h2 {
     font-size: 1.5rem;
   }
   /* galerie photo  */
