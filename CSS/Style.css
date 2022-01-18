@@ -20,6 +20,11 @@ a {
   color: black;
 }
 
+button {
+  all: unset;
+  cursor: pointer;
+}
+
 /* HEADER */
 header {
   margin: 0 50px 0px 50px;
@@ -116,7 +121,7 @@ input[type="search"]:focus {
   outline: none;
 }
 
-#recherche div:nth-child(3) {
+#recherche button {
   display: flex;
   justify-content: center;
   align-items: center;
