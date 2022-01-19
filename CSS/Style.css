@@ -675,6 +675,10 @@ footer {
   background-color: var(--neutral);
 }
 
+footer > div {
+  margin-top: 10px;
+}
+
 footer ul {
   margin: 10px 0px;
 }
